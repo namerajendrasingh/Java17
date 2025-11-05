@@ -1,10 +1,13 @@
 package com.raj.sealed;
 
-public class SealedTest {
-
+public final class SealedTest implements SealedInterface {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+       System.out.println("Implementing Sealed Method");
+	}
+	@Override
+	public void show() {
+		new SealedTest().show();
+		
 	}
 
 }

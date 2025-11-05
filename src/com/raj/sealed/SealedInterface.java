@@ -1,5 +1,5 @@
 package com.raj.sealed;
 
-public interface SealedInterface {
-
+public sealed interface SealedInterface permits SealedTest {
+ void show();
 }
